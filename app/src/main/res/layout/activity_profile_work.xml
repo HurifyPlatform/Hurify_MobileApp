@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_device"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:id="@+id/toolbarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+        <include android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/toolbarContainer"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout10">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/image"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/relativeLayout10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/relative1"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:text="Name"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    />
+
+                <EditText
+                    android:id="@+id/Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Name"
+                    android:textSize="14sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/textView" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/relative2"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/relative1"
+                android:layout_centerHorizontal="true">
+
+
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:text="Country"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    />
+
+                <Spinner
+                    android:id="@+id/Country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:entries="@array/spinnerItems"
+                    android:layout_toEndOf="@+id/textView1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/relative3"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/relative2"
+                android:layout_centerHorizontal="true">
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:text="Language"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    />
+
+                <EditText
+                    android:id="@+id/Language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="14sp"
+                    android:inputType="textPersonName"
+                    android:hint="Language"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/textView3" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/relative4"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/relative3"
+                android:layout_centerHorizontal="true">
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:text="Overview"
+                    android:textSize="16sp"
+                    android:gravity="top"
+                    android:layout_marginStart="15dp"
+                    />
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_toEndOf="@+id/textView4">
+                <EditText
+                    android:id="@+id/Overview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    android:hint="Overview Max 100 Words"
+                    android:textSize="14sp"
+                    android:gravity="bottom"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/textView4" />
+
+</android.support.v4.widget.NestedScrollView>
+
+            </RelativeLayout>
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/ProfileSubmit"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:background="@drawable/button_pressed"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true">
+            </Button>
+
+
+
+            <TextView
+                android:id="@+id/validName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/relative1"
+                android:layout_marginStart="15dp"
+
+                android:text="" />
+
+            <TextView
+                android:id="@+id/validCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/validName"
+                android:layout_below="@+id/relative2"
+
+                android:text="" />
+
+            <TextView
+                android:id="@+id/validLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/validCountry"
+                android:layout_below="@+id/relative3"
+
+                android:text="" />
+
+            <TextView
+                android:id="@+id/validOverView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/validLanguage"
+                android:layout_below="@+id/relative4"
+
+                android:text="" />
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

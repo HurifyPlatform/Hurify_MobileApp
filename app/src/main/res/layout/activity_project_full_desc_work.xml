@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_device"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:id="@+id/toolbarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+        <include android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/toolbarContainer"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout10">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/image"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/relativeLayout10"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/relative1"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:text="Name"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                 />
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Project Name"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/textView" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/relative3"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/relative1"
+            android:layout_centerHorizontal="true">
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:text="Technology"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                />
+
+            <TextView
+                android:id="@+id/Technology"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:hint="Technology"
+                android:gravity="center_vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/textView3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/relative4"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/relative3"
+            android:layout_centerHorizontal="true">
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:text="Categories"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                />
+
+            <TextView
+                android:id="@+id/Categories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:gravity="center_vertical"
+                android:hint="Categories"
+                android:textSize="14sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/textView4" />
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/relative5"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/relative4"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:text="Price"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                />
+
+            <TextView
+                android:id="@+id/Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Project Price"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/textView5" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/relative6"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/relative5"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:text="Experience"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                />
+
+            <TextView
+                android:id="@+id/Experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=" Experience"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/textView6" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/relative7"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/relative6"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:text="Est. Time"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                />
+
+            <TextView
+                android:id="@+id/EstTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Est. Time"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/textView7" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/relative8"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/relative7"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:text="Posted On"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                />
+
+            <TextView
+                android:id="@+id/days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Project posted on days ago"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/textView8" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/relative9"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/relative8"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:text="Description"
+                android:textSize="16sp"
+                android:gravity="top"
+                android:layout_marginStart="15dp"
+                />
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_toEndOf="@+id/textView9">
+            <TextView
+                android:id="@+id/Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:gravity="bottom"
+                android:textSize="14sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/textView9" />
+            </android.support.v4.widget.NestedScrollView>
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/Apply"
+            android:layout_marginTop="15dp"
+            android:text="List Of Applicants"
+            android:textColor="@color/white"
+            android:background="@drawable/button_pressed"
+            android:layout_below="@+id/relative9"
+            android:layout_centerHorizontal="true">
+        </Button>
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+
+</RelativeLayout>

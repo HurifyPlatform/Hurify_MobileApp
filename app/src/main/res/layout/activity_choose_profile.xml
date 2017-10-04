@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_device"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/button_pressed"
+    >
+    <LinearLayout
+        android:id="@+id/toolbarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+        <include android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/colorPrimary"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+        <Button
+            android:id="@+id/button_hire"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="HIRE"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:background="#2cc1e9"/>
+        <Button
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/white"
+            android:background="@color/grey_300"/>
+
+        <Button
+            android:id="@+id/button_work"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="WORK"
+            android:textColor="@color/navigationBarColor" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

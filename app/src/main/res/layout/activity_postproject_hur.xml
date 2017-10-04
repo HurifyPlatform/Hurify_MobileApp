@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_device"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/button_pressed"
+    >
+    <LinearLayout
+        android:id="@+id/toolbarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+        <include android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/HurAddress"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="116dp"
+        android:ems="10"
+        android:hint="Hur Address"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="textPersonName"
+        />
+
+    <Button
+        android:id="@+id/SubmitHur"
+        android:layout_width="240dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/HurAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"
+        android:textColorHint="@color/white"
+        android:background="@drawable/round_forget"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/errorHur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SubmitHur"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="111dp"
+        android:textColor="@color/white"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/errorEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/HurAddress"
+        android:layout_below="@+id/HurAddress"
+        android:textColor="@color/white"
+        android:text="" />
+
+
+</RelativeLayout>

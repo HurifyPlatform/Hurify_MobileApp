@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_device"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/button_pressed"
+    >
+    <LinearLayout
+        android:id="@+id/toolbarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+        <include android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/toolbarContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="110dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:background="@color/button_pressed"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+            android:text="HUR" />
+
+        <EditText
+            android:id="@+id/bid_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Bid Value"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/biderror"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout1">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="110dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:background="@color/button_pressed"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+            android:text="Experience Level" />
+
+        <Spinner
+            android:id="@+id/exp_level"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:entries="@array/expValue"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            />
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/bid_value_button"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/round_forget"
+        android:text="Submit"
+        android:layout_below="@+id/biderror"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="141dp" />
+
+    <TextView
+        android:id="@+id/biderror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:textColor="@color/filterColor"
+        android:text=""
+        android:layout_alignStart="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/script"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bid_value_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="79dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/txtexp_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_toEndOf="@+id/biderror"
+        android:text="" />
+
+
+</RelativeLayout>

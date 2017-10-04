@@ -1,0 +1,372 @@
+<resources>
+    <string name="app_name">BlockChain</string>
+    <string name="spin">Choose Country</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="ok_label">Add</string>
+    <string name="dismiss_label">Dismiss</string>
+    <string name="clear_all_label">Clear all</string>
+
+
+    <string-array name="accountType">
+        <item>Account Type</item>
+        <item>Service Provider</item>
+        <item>Service Seeker</item>
+    </string-array>
+
+
+
+    <string-array name="expValue">
+        <item>Choose Exprience Level</item>
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Expert</item>
+    </string-array>
+
+
+
+    <string-array name="menu_items_labels" >
+        <item ><FONT COLOR="#FFFFFF"><b>Choose Exprience Level</b></FONT></item>
+        <item ><FONT COLOR="#006600"><b>Beginner</b></FONT></item>
+        <item ><FONT COLOR="#006600"><b>Intermediate</b></FONT></item>
+        <item ><FONT COLOR="#006600"><b>Expert</b></FONT></item>
+    </string-array>
+
+
+
+
+    <string-array name="serviceProviderType">
+        <item>Service Provider Type</item>
+        <item>Hardware Manufacturers</item>
+        <item>System Developers</item>
+        <item>Software Providers</item>
+        <item>Cloud service provider</item>
+        <item>Retail Application</item>
+        <item>App Developers</item>
+        <item>Design Providers</item>
+        <item>Independent Software Provider</item>
+    </string-array>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+
+    <string-array name="spinnerItems">
+        <item>Choose Country</item>
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>American samoa</item>
+        <item>Angola</item>
+        <item>Anguilla</item>
+        <item>Antartica</item>
+        <item>Antigua and barbuda</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Aruba</item>
+        <item>Ashmore and cartier island</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+        <item>Bahamas</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Belize</item>
+        <item>Benin</item>
+        <item>Bermuda</item>
+        <item>Bhutan</item>
+        <item>Bolivia</item>
+        <item>Bosnia and herzegovina</item>
+        <item>Botswana</item>
+        <item>Brazil</item>
+        <item>British virgin islands</item>
+        <item>Brunei</item>
+        <item>Bulgaria</item>
+        <item>Burkina faso</item>
+        <item>Burma</item>
+        <item>Burundi</item>
+        <item>Cambodia</item>
+        <item>Cameroon</item>
+        <item>Canada</item>
+        <item>Cape verde</item>
+        <item>Cayman islands</item>
+        <item>Central african republic</item>
+        <item>Chad</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Christmas island</item>
+        <item>Clipperton island</item>
+        <item>Cocos islands</item>
+        <item>Colombia</item>
+        <item>Comoros</item>
+        <item>Congo democratic republic of the</item>
+        <item>Congo republic of the</item>
+        <item>Cook islands</item>
+        <item>Costa rica</item>
+        <item>Cote d\'ivoire</item>
+        <item>Croatia</item>
+        <item>Cuba</item>
+        <item>Cyprus</item>
+        <item>Czeck republic</item>
+        <item>Denmark</item>
+        <item>Djibouti</item>
+        <item>Dominica</item>
+        <item>Dominican republic</item>
+        <item>Ecuador</item>
+        <item>Egypt</item>
+        <item>El salvador</item>
+        <item>Equatorial guinea</item>
+        <item>Eritrea</item>
+        <item>Estonia</item>
+        <item>Ethiopia</item>
+        <item>Europa island</item>
+        <item>Falkland islands</item>
+        <item>Faroe islands</item>
+        <item>Fiji</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>French guiana</item>
+        <item>French polynesia</item>
+        <item>French southern and antarctic lands</item>
+        <item>Gabon</item>
+        <item>Gambia the</item>
+        <item>Gaza strip</item>
+        <item>Georgia</item>
+        <item>Germany</item>
+        <item>Ghana</item>
+        <item>Gibraltar</item>
+        <item>Glorioso islands</item>
+        <item>Greece</item>
+        <item>Greenland</item>
+        <item>Grenada</item>
+        <item>Guadeloupe</item>
+        <item>Guam</item>
+        <item>Guatemala</item>
+        <item>Guernsey</item>
+        <item>Guinea</item>
+        <item>Guinea-Bissau</item>
+        <item>Guyana</item>
+        <item>Haiti</item>
+        <item>Heard island and mcDonald islands</item>
+        <item>Holy See</item>
+        <item>Honduras</item>
+        <item>Hong Kong</item>
+        <item>Howland island</item>
+        <item>Hungary</item>
+        <item>Iceland</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Iran</item>
+        <item>Iraq</item>
+        <item>Ireland</item>
+        <item>Ireland northern</item>
+        <item>Israel</item>
+        <item>Italy</item>
+        <item>Jamaica</item>
+        <item>Jan mayen</item>
+        <item>Japan</item>
+        <item>Jarvis island</item>
+        <item>Jersey</item>
+        <item>Johnston atoll</item>
+        <item>Jordan</item>
+        <item>Juan de nova island</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kiribati</item>
+        <item>Korea North</item>
+        <item>Korea South</item>
+        <item>Kuwait</item>
+        <item>Kyrgyzstan</item>
+        <item>Laos</item>
+        <item>Latvia</item>
+        <item>Lebanon</item>
+        <item>Lesotho</item>
+        <item>Liberia</item>
+        <item>Libya</item>
+        <item>Liechtenstein</item>
+        <item>Lithuania</item>
+        <item>Luxembourg</item>
+        <item>Macau</item>
+        <item>Macedonia</item>
+        <item>Madagascar</item>
+        <item>Malawi</item>
+        <item>Malaysia</item>
+        <item>Maldives</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item>Man isle of</item>
+        <item>Marshall islands</item>
+        <item>Martinique</item>
+        <item>Mauritania</item>
+        <item>Mauritius</item>
+        <item>Mayotte</item>
+        <item>Mexico</item>
+        <item>Micronesia</item>
+        <item>Midway islands</item>
+        <item>Moldova</item>
+        <item>Monaco</item>
+        <item>Mongolia</item>
+        <item>Montserrat</item>
+        <item>Morocco</item>
+        <item>Mozambique</item>
+        <item>Namibia</item>
+        <item>Nauru</item>
+        <item>Nepal</item>
+        <item>Netherlands</item>
+        <item>Netherlands antilles</item>
+        <item>New caledonia</item>
+        <item>New Zealand</item>
+        <item>Nicaragua</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item>Niue</item>
+        <item>Norfolk island</item>
+        <item>Northern mariana islands</item>
+        <item>Norway</item>
+        <item>Oman</item>
+        <item>Pakistan</item>
+        <item>Palau</item>
+        <item>Panama</item>
+        <item>Papua new guinea</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Philippines</item>
+        <item>Pitcaim islands</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Puerto rico</item>
+        <item>Qatar</item>
+        <item>Reunion</item>
+        <item>Romainia</item>
+        <item>Russia</item>
+        <item>Rwanda</item>
+        <item>Saint helena</item>
+        <item>Saint kitts and nevis</item>
+        <item>Saint lucia</item>
+        <item>Saint pierre and miquelon</item>
+        <item>Saint vincent and the grenadines</item>
+        <item>Samoa</item>
+        <item>San marino</item>
+        <item>Sao tome and principe</item>
+        <item>Saudi arabia</item>
+        <item>Scotland</item>
+        <item>Senegal</item>
+        <item>Seychelles</item>
+        <item>Sierra leone</item>
+        <item>Singapore</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Solomon islands</item>
+        <item>Somalia</item>
+        <item>South africa</item>
+        <item>South georgia and south sandwich islands</item>
+        <item>Spain</item>
+        <item>Spratly islands</item>
+        <item>Sri lanka</item>
+        <item>Sudan</item>
+        <item>Suriname</item>
+        <item>Svalbard</item>
+        <item>Swaziland</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Syria</item>
+        <item>Taiwan</item>
+        <item>Tajikistan</item>
+        <item>Tanzania</item>
+        <item>Thailand</item>
+        <item>Tobago</item>
+        <item>Toga</item>
+        <item>Tokelau</item>
+        <item>Tonga</item>
+        <item>Trinidad</item>
+        <item>Tunisia</item>
+        <item>Turkey</item>
+        <item>Turkmenistan</item>
+        <item>Tuvalu</item>
+        <item>Uganda</item>
+        <item>Ukraine</item>
+        <item>United Arab Emirates</item>
+        <item>United Kingdom</item>
+        <item>Uruguay</item>
+        <item>USA</item>
+        <item>Uzbekistan</item>
+        <item>Vanuatu</item>
+        <item>Venezuela</item>
+        <item>Vietnam</item>
+        <item>Virgin islands</item>
+        <item>Wales</item>
+        <item>Wallis and futuna</item>
+        <item>West bank</item>
+        <item>Western sahara</item>
+        <item>Yemen</item>
+        <item>Yugoslavia</item>
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+
+
+    </string-array>
+
+
+    <string-array name="sdkItems">
+        <item>Choose Categories</item>
+        <item>Networking</item>
+        <item>Cloud</item>
+        <item>Web,Mobile and Software Development</item>
+        <item>Admin Support</item>
+        <item>Sales and Marketing</item>
+        <item>account Support</item>
+    </string-array>
+
+    <string-array name="category_item">
+        <item>Networking</item>
+        <item>Cloud</item>
+        <item>Software</item>
+        <item>Admin</item>
+        <item>Sales</item>
+        <item>Account</item>
+    </string-array>
+
+    <string-array name="exp_item">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Expert</item>
+    </string-array>
+
+    <string-array name="nav_item_activity_titles">
+        <item>Profile</item>
+        <item>Find Work</item>
+        <item>Applied Project</item>
+        <item>Logout</item>
+    </string-array>
+
+
+    <string-array name="nav_item_activity_titles_work">
+        <item>Profile Work</item>
+        <item>Post Project</item>
+        <item>Posted Projects</item>
+        <item>LogOut</item>
+    </string-array>
+
+
+    <string-array name="type">
+        <item>TYPE</item>
+        <item>Individual</item>
+        <item>Company</item>
+    </string-array>
+
+    <string name="nav_home_work">Profile</string>
+    <string name="nav_photos_work">Post Project</string>
+    <string name="nav_movies_work">Posted Projects</string>
+    <string name="nav_notifications_work">LogOut</string>
+
+
+    <string name="nav_home">Profile</string>
+    <string name="nav_photos">Find Work</string>
+    <string name="nav_movies">Applied Project</string>
+    <string name="nav_notifications">Logout</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_about_us">About Us</string>
+</resources>

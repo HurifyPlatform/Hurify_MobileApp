@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_device"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+    <LinearLayout
+        android:id="@+id/toolbarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+        <include android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etVerifyEmail"
+        android:hint="  Enter Email Id"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@color/grey_800"
+        android:layout_marginTop="87dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/toolbarContainer"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Send"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/round_forget"
+        android:id="@+id/btnDeviceName"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/etVerifyEmail"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnDeviceName"
+        android:layout_alignStart="@+id/etVerifyEmail"
+        android:layout_marginBottom="50dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDeviceName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="92dp"
+        android:textColor="@color/white"
+        android:text="" />
+
+
+    <!--<android.support.v7.widget.RecyclerView
+        android:id="@+id/device_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarContainer"
+        />
+-->
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mohit.blockchain">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+        <activity android:name=".LoginActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+
+        </activity>
+
+        <activity android:name=".ActivityBidValue">
+
+        </activity>
+
+
+
+        <activity android:name=".ActivityProfileWork">
+
+        </activity>
+
+
+        <activity android:name=".ActivityProfileWorkShow">
+
+        </activity>
+
+
+        <activity android:name=".ForgotPass">
+
+        </activity>
+
+        <activity android:name=".ActivityProfileWorkEdit">
+
+
+
+        </activity>
+
+        <activity android:name=".ReSendEmailVerification">
+
+        </activity>
+
+        <activity android:name=".ChooseProfileActivity">
+
+
+        </activity>
+
+
+        <activity android:name=".ActivityProfileHire">
+
+
+
+        </activity>
+
+        <activity android:name=".NavDrawerActivity">
+
+
+
+        </activity>
+
+        <activity android:name=".NavDrawerActivityWork">
+
+
+
+
+        </activity>
+
+        <activity android:name=".ActivityProfileHireShow">
+        </activity>
+
+        <activity android:name=".ActivityProfileHireEdit">
+
+
+        </activity>
+        <activity android:name=".ActivityProjectFullDesc">
+
+        </activity>
+
+        <activity android:name=".ActivityProjectFullDescWork">
+
+        </activity>
+
+        <activity android:name=".ActivityApplicantsList">
+
+        </activity>
+        <activity android:name=".ActivityApplicantsProfile">
+
+        </activity>
+
+    <activity android:name=".PostProjectConfirmHur">
+
+    </activity>
+    </application>
+
+</manifest>

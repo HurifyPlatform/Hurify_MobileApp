@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_device"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/button_pressed"
+    >
+    <LinearLayout
+        android:id="@+id/toolbarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+        <include android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="135dp"
+            android:layout_height="125dp"
+            app:srcCompat="@drawable/applogin"
+            android:layout_marginTop="31dp"
+            android:layout_below="@+id/toolbarContainer"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textViewForgotPasswordMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="Set your new password with the verification code that was sent to you"
+            android:layout_below="@+id/imageView5"
+            android:layout_alignParentStart="true" />
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textViewForgotPasswordMessage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="71dp"
+            >
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/relativeLayout2"
+            android:layout_alignTop="@+id/relativeLayout"
+            android:layout_toStartOf="@+id/editTextForgotPasswordPass">
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editTextForgotPasswordPass"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+
+            android:ems="10"
+            android:textColor="@color/white"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/white"
+            android:layout_alignTop="@+id/relativeLayout"
+            android:layout_alignEnd="@+id/relativeLayout" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignBottom="@+id/relativeLayout"
+            android:layout_toStartOf="@+id/editTextForgotPasswordPass"
+            app:srcCompat="@drawable/password" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_marginTop="32dp"
+            android:id="@+id/relativeLayout8"
+
+            android:layout_alignStart="@+id/relativeLayout9"
+            android:layout_alignEnd="@+id/editTextForgotPasswordCode">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/relativeLayout9"
+            android:layout_alignTop="@+id/relativeLayout8"
+            android:layout_toStartOf="@+id/editTextForgotPasswordPass">
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editTextForgotPasswordCode"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+
+            android:ems="10"
+            android:textColor="@color/white"
+            android:hint="Verification Code"
+            android:inputType="textPassword"
+            android:textColorHint="@color/white"
+            android:layout_alignTop="@+id/relativeLayout8"
+            android:layout_toEndOf="@+id/imageView6" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_alignStart="@+id/imageView6"
+            android:layout_alignTop="@+id/relativeLayout8"
+            app:srcCompat="@drawable/password" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:background="@drawable/round_forget_reset"
+            android:layout_below="@+id/relativeLayout8"
+            android:layout_marginTop="32dp"
+            android:onClick="forgotPassword"
+            android:text="Reset"
+            android:layout_alignEnd="@+id/relativeLayout8"
+            android:layout_toEndOf="@+id/textViewForgotPasswordCodeMessage"
+            android:layout_alignStart="@+id/textViewForgotPasswordCodeMessage" />
+
+        <TextView
+            android:id="@+id/textViewForgotPasswordUserIdLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativeLayout2"
+            android:layout_alignStart="@+id/relativeLayout"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textViewForgotPasswordUserIdMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/relativeLayout"
+            android:layout_below="@+id/imageView6"
+            android:textSize="10dp"
+            android:textColor="@color/alert"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textViewForgotPasswordCodeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/relativeLayout8"
+            android:layout_below="@+id/textViewForgotPasswordUserIdMessage"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textViewForgotPasswordCodeMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/relativeLayout8"
+            android:layout_below="@+id/relativeLayout8"
+            android:textSize="10dp"
+            android:textColor="@color/alert"
+            android:text="" />
+
+
+</RelativeLayout>
