@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.blockchain.NegotiationFormClient">
+
+    <LinearLayout
+        android:id="@+id/toolbarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+        <include android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/toolbarContainer"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout10">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/image"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/relativeLayout10"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/relative1"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentStart="true"
+                    android:text="Project ID"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    />
+
+                <EditText
+                    android:id="@+id/project_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Project ID"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/textView" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/relative2"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/relative1"
+                android:layout_centerHorizontal="true">
+
+
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentStart="true"
+                    android:text="Title"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    />
+
+                <EditText
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Title"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/textView1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/relative3"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/relative2"
+                android:layout_centerHorizontal="true">
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentStart="true"
+                    android:text="Ethereum Wallet Address"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    />
+
+                <EditText
+                    android:id="@+id/wallet_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Ethereum Wallet Address"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/textView3" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/relative4"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/relative3"
+                android:layout_centerHorizontal="true">
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentStart="true"
+                    android:text="Time Frame"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    />
+
+                <EditText
+                    android:id="@+id/time_frame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Time Frame"
+                    android:textSize="14sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/textView4" />
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/relative5"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/relative4"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentStart="true"
+                    android:text="HUR Value"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    />
+
+                <EditText
+                    android:id="@+id/hur_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:hint="HUR Value"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/textView5" />
+            </RelativeLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/relative5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/decline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:background="#000000"
+                    android:textColor="@color/white"
+                    android:text="Decline" />
+
+
+                <Button
+                    android:id="@+id/accept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:background="@color/button_pressed"
+                    android:textColor="@color/white"
+                    android:text="Accept" />
+
+
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:background="@color/filterColor"
+                    android:textColor="@color/white"
+                    android:text="Back" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/validProjectId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/relative1"
+                android:layout_marginStart="15dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/validTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/validProjectId"
+                android:layout_below="@+id/relative2"
+
+                android:text="" />
+
+            <TextView
+                android:id="@+id/validWalletAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/validTitle"
+                android:layout_below="@+id/relative3"
+
+                android:text="" />
+
+            <TextView
+                android:id="@+id/validTimeFrame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/validWalletAddress"
+                android:layout_below="@+id/relative4"
+
+                android:text="" />
+
+            <TextView
+                android:id="@+id/validHurValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/validTimeFrame"
+                android:layout_below="@+id/relative5"
+
+                android:text="" />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

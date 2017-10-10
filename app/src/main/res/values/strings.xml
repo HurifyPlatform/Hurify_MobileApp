@@ -16,7 +16,6 @@
     </string-array>
 
 
-
     <string-array name="expValue">
         <item>Choose Exprience Level</item>
         <item>Beginner</item>
@@ -25,15 +24,12 @@
     </string-array>
 
 
-
-    <string-array name="menu_items_labels" >
-        <item ><FONT COLOR="#FFFFFF"><b>Choose Exprience Level</b></FONT></item>
-        <item ><FONT COLOR="#006600"><b>Beginner</b></FONT></item>
-        <item ><FONT COLOR="#006600"><b>Intermediate</b></FONT></item>
-        <item ><FONT COLOR="#006600"><b>Expert</b></FONT></item>
+    <string-array name="menu_items_labels">
+        <item><FONT COLOR="#FFFFFF"><b>Choose Exprience Level</b></FONT></item>
+        <item><FONT COLOR="#006600"><b>Beginner</b></FONT></item>
+        <item><FONT COLOR="#006600"><b>Intermediate</b></FONT></item>
+        <item><FONT COLOR="#006600"><b>Expert</b></FONT></item>
     </string-array>
-
-
 
 
     <string-array name="serviceProviderType">
@@ -369,4 +365,5 @@
     <string name="nav_notifications">Logout</string>
     <string name="nav_settings">Settings</string>
     <string name="nav_about_us">About Us</string>
+    <string name="title_activity_negotiation_form_client">NegotiationFormClient</string>
 </resources>

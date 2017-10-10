@@ -322,6 +322,90 @@
             </android.support.v4.widget.NestedScrollView>
         </RelativeLayout>
 
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/relative9"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/relative8"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:text="Upload Photo"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                />
+
+            <ImageView
+                android:id="@+id/Choose_photo"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:hint="Skills"
+                android:src="@drawable/add_photo"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textView9" />
+            <ImageView
+                android:id="@+id/Upload_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:hint="Skills"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/Choose_photo" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/relative10"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/relative9"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:text="Upload Document"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                />
+
+            <ImageView
+                android:id="@+id/Choose_document"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:hint="Skills"
+                android:src="@drawable/doc"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textView10" />
+
+            <ImageView
+                android:id="@+id/Upload_document"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:hint="Skills"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/Choose_document" />
+
+
+        </RelativeLayout>
+
+
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -330,7 +414,7 @@
             android:text="Submit"
             android:textColor="@color/white"
             android:background="@drawable/button_pressed"
-            android:layout_below="@+id/relative8"
+            android:layout_below="@+id/relative10"
             android:layout_centerHorizontal="true">
         </Button>
 

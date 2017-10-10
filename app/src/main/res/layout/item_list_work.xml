@@ -3,7 +3,8 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:fresco="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="220dp"
+    android:layout_height="260dp"
+    android:id="@+id/item_list_work"
     android:background="@android:color/white">
 
 
@@ -32,7 +33,7 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="10dp"
                 android:text="HiveyPIE"
-                android:textColor="@color/filterColor"
+                android:textColor="@color/projectColor"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -173,20 +174,57 @@
                 android:layout_alignStart="@+id/expert_level"
                 android:layout_below="@+id/expert_level"
                 android:layout_marginTop="10dp"
+                android:text="Number of application"
                 android:textSize="14sp"
-                android:textStyle="bold"
-                android:text="Number of application" />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/application"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/textView11"
                 android:layout_alignBottom="@+id/textView11"
+                android:layout_alignTop="@+id/textView11"
                 android:layout_marginStart="4dp"
                 android:layout_toEndOf="@+id/textView11"
+                android:text="23"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView11"
+                android:layout_alignEnd="@+id/Hur"
+                android:layout_alignTop="@+id/textView11"
+                android:textSize="14sp"
                 android:textStyle="bold"
-                android:text="23" />
+                android:text="TextView" />
+
+
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:layout_below="@+id/textView11"
+                android:layout_alignStart="@+id/textView11"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Please Verify Project" />
+
+            <TextView
+                android:id="@+id/txtVerify"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/txtStatus"
+                android:layout_alignTop="@+id/textView17"
+                android:layout_alignBottom="@+id/textView17"
+                android:gravity="center"
+                android:background="@drawable/round_forget"
+                android:textColor="@color/white"
+                android:text="TextView" />
 
 
         </RelativeLayout>
